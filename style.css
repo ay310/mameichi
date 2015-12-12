@@ -1,0 +1,115 @@
+body {
+	margin: 0px;
+	color: #4d453d;
+	background-color :#463D36;
+	background: url(img/bean1.jpg) repeat top right;
+   	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+}
+
+
+
+#layout {
+	text-align: left;
+	width: 840px;
+	background-color :#463D36;
+	color: #4d453d;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	paggind :0px;
+}
+ #menu {  
+ 	display: table;
+    	table-layout: fixed;
+        	width: 100%;
+	max-width: 840px;
+	min-width: 840 px:
+	background-color :#463D36;
+    	margin: 0 auto;
+
+    	box-sizing: border-box;
+ }
+ #menu img { 
+ 	margin: 0px 10px 0px 0px;
+  }  
+  
+  .box {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fff;
+    color: #ffffff;
+    padding: 10px 0;
+    border: 2px #463D36 solid;
+}
+.box:nth-child(2n) {
+    background-color: #fff;
+}
+
+#header {  
+   	height: 300px;
+	width: 840px;
+	margin-right: auto;
+	margin-left: auto;
+	 background-color :#463D36;
+	 paggind :0px;
+ }
+ #header img{
+  	margin: 0px 0px 0px 0px;
+	width: 840px;
+    	overflow: hidden;
+    	position: relative;
+ }
+ 
+ .viewer ul {
+    width: 840px;
+    height: 300px;
+    margin-top:0.0em;
+    margin-bottom:0.0em;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    background-color :#463D36;
+}
+
+.viewer ul li {
+    top: 0;
+    left: 0;
+    width: 840px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+}
+
+div.Tile{
+                    height: 100px;
+                    width: 150px;
+                    background-color: #fff;
+                    margin: 0px;
+                    float: left;
+            }
+             
+ #content {  
+ 	background-color :#463D36;
+ 	color :#FFFFF4;
+ 	 margin: 40px 40px 40px 40px;
+ }
+ 
+  
+ #footer {  
+	width: 840px;
+	margin: 10px 0px 20px 0px;
+	color :#fffce9;
+	background-color :#463D36;
+	margin-top:1.0em;
+    	margin-bottom:1.0em;
+ }
+ 
+  #footer_menu {  
+	width: 840px;
+	margin: 10px 10px 10px 10px;
+	color :#fffce9;
+	background-color :#463D36;
+
+ }
+ 

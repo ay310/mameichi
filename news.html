@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="Shift_JIS">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+$(function(){
+    var $setElm = $('.viewer'),
+    fadeSpeed = 1500,
+    switchDelay = 4000;
+
+    $setElm.each(function(){
+        var targetObj = $(this);
+        var findUl = targetObj.find('ul');
+        var findLi = targetObj.find('li');
+        var findLiFirst = targetObj.find('li:first');
+
+        findLi.css({display:'block',opacity:'0',zIndex:'99'});
+        findLiFirst.css({zIndex:'100'}).stop().animate({opacity:'1'},fadeSpeed);
+
+        setInterval(function(){
+            findUl.find('li:first-child').animate({opacity:'0'},fadeSpeed).next('li').css({zIndex:'100'}).animate({opacity:'1'},fadeSpeed).end().appendTo(findUl).css({zIndex:'99'});
+        },switchDelay);
+    });
+});
+</script>
+</head>
+<body>
+<div id="layout">
+<div id="menu">
+<img src="img/logo.png" 、width="60%" height="60%">
+<a href=""><img src="img/m_home.jpg"></a>
+<a href=""><img src="img/m_info.jpg"></a>
+<a href=""><img src="img/m_menu.jpg"></a>
+</div>
+<div id="header">
+<div class="viewer">
+<ul>
+<li><img src="img/mameichi.png"></li>
+<li><img src="img/pict_1.jpg"></li>
+<li><img src="img/pict_2.jpg" ></li>
+</ul>
+</div><!--/.viewer--></div><!--/.header-->
+<div id ="content">
+<br>
+
+2015.09.18
+<h1>パナマ　ゲイシャ　エスメラルダ農園　予約販売開始</h1>
+<img src="img/news/20150918.jpg"><br>
+円安、コーヒー豆の高騰などで、かなりの価格アップが予想されましたが、
+今回は100ｇ￥2.700で販売となります。
+
+私の予想をはるかに下回った値段で安心しました。
+
+もちろんこの値段では安いです!!
+
+そして、今回も焙煎日を４回に分ける予定となっております。
+第１回　10/1 (木)
+第２回　10/7 (水)
+第３回　10/14(水)
+第４回　10/21(水)
+(これは焙煎日なので、当日の取りに来れなくても問題ありません。)
+
+今回は、毎週予約される方も多いです。
+数量限定となっておりますので、予定量まで達した場合予約は締め切らしていただきます。
+お気軽にお問い合わせください。
+よろしくお願いいたします。
+
+</div><!--/.content-->
+<hr size=1 color="#fff">
+<div id="footer">
+<a href="http://www.facebook.com/share.php?u=index.html" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><img src="img/fb.png" height="30px" width="30px"></a>
+<img src="img/twitter.png" height="30px" width="30px">
+</div><!--/.footer-->
+</div><!--/.layout-->
+</body>
+</html>
